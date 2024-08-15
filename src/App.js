@@ -1,12 +1,16 @@
 import React from 'react';
+import Navbar from "./navbar/Navbar";
+import Landing from "./landing/Landing";
 
 
 function App() {
   return (
-    <div className="App">
-
+    <div>
+        <Navbar />
+        <Landing />
     </div>
   );
 }
+
 
 export default App;

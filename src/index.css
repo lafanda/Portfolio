@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.trail {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+}

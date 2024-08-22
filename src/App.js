@@ -1,25 +1,23 @@
 import React from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-import Navbar from "./format/Navbar";
-import Footer from "./format/Footer";
-import Landing from "./landing/Landing";
-import About from "./landing/About";
-import Experince from "./landing/Experince";
-import Projects from "./landing/Projects";
+
+import Home from "./landing/Home";
+import Contact from "./contact/Contact";
 
 
 
 function App() {
-  return (
-    <div>
-        <Navbar />
-        <Landing />
-        <About />
-        <Experince />
-        <Projects/>
-        <Footer />
-    </div>
-  );
+    return (
+        <Router>
+
+                <Routes>
+                    <Route index element={<Home/>}/>
+                    <Route path={'/contact'} element ={<Contact/>}/>
+                </Routes>
+
+        </Router>
+    );
 }
 
 

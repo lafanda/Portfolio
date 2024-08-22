@@ -2,19 +2,19 @@ import React from 'react';
 import './Carousel.css';  // Make sure to create this CSS file
 
 const images = [
-    'photos/Carousel/bootstrap.png',
-    'photos/Carousel/c.png',
-    'photos/Carousel/css.png',
-    'photos/Carousel/github.png',
-    'photos/Carousel/html.png',
-    'photos/Carousel/java.png',
-    'photos/Carousel/js.png',
-    'photos/Carousel/mySQL.png',
-    'photos/Carousel/node.png',
-    'photos/Carousel/python.png',
-    'photos/Carousel/react.png',
-    'photos/Carousel/tailwind.png',
-    'photos/Carousel/ts.png',
+    'photos/carousel/bootstrap.png',
+    'photos/carousel/c.png',
+    'photos/carousel/css.png',
+    'photos/carousel/github.png',
+    'photos/carousel/html.png',
+    'photos/carousel/java.png',
+    'photos/carousel/js.png',
+    'photos/carousel/mySQL.png',
+    'photos/carousel/node.png',
+    'photos/carousel/python.png',
+    'photos/carousel/react.png',
+    'photos/carousel/tailwind.png',
+    'photos/carousel/ts.png',
 ];
 
 const Carousel = () => {

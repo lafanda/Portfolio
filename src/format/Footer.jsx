@@ -4,45 +4,45 @@ import { faDiscord, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-
 
 function Footer() {
     return (
-        <footer className="relative bg-blueGray-200 pt-8 pb-6">
+        <footer className="relative bg-blueGray-200 pt-20 pb-6">
             <div className="container mx-auto px-4">
-                <div className="flex flex-wrap text-left lg:text-left justify-between">
-                    <div className="w-full lg:w-6/12 px-4">
-                        <h4 className="text-3xl font-semibold text-amber-600">Let's keep in touch!</h4>
-                        <div className="mt-2 lg:mb-0 mb-6">
-                            <button
-                                className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                type="button">
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </button>
-                            <button
-                                className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                type="button">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </button>
-                            <button
-                                className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                type="button">
-                                <FontAwesomeIcon icon={faDiscord} />
-                            </button>
-                            <button
-                                className="bg-white text-gray-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                type="button">
-                                <FontAwesomeIcon icon={faInstagram} />
-                            </button>
+                <div className="flex flex-wrap text-center lg:text-right justify-center lg:justify-between">
+                    <div className="w-full lg:w-6/12 px-4 hidden lg:flex">
+                        <div className="flex flex-wrap items-top mb-6">
+                            <img src="photos/Initials.png" alt="logo" className="h-16"/>
                         </div>
                     </div>
                     <div className="w-full lg:w-6/12 px-4">
-                        <div className="flex flex-wrap items-top justify-end mb-6">
-                            <div className="w-full lg:w-4/12 px-4">
-                                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2"></span>
-                                <ul className="list-unstyled">
-                                    <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                           href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">put smth here</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <h4 className="text-3xl font-semibold text-amber-600">Let's keep in touch!</h4>
+                        <div className="mt-2 lg:mb-0 mb-6 flex justify-center lg:justify-end">
+                            <a href="https://www.linkedin.com/in/yazanhailat/">
+                                <button
+                                    className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:text-amber-600"
+                                    type="button">
+                                    <FontAwesomeIcon icon={faLinkedin}/>
+                                </button>
+                            </a>
+                            <a href="https://github.com/lafanda">
+                                <button
+                                    className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:text-amber-600"
+                                    type="button">
+                                    <FontAwesomeIcon icon={faGithub}/>
+                                </button>
+                            </a>
+                            <a href="https://discord.com/users/340224159965511682">
+                                <button
+                                    className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:text-amber-600"
+                                    type="button">
+                                    <FontAwesomeIcon icon={faDiscord}/>
+                                </button>
+                            </a>
+                            <a href="https://www.instagram.com/yazan_mmh/">
+                                <button
+                                    className="bg-white text-gray-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:text-amber-600"
+                                    type="button">
+                                    <FontAwesomeIcon icon={faInstagram}/>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

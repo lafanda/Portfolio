@@ -1,0 +1,37 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;  /* This will vertically align the images in the center */
+    white-space: nowrap;
+    animation: scroll 17s linear infinite;
+
+}
+
+.scroll-container img {
+    margin-right: 80px; /* Increased padding for more space between icons */
+    width: 50px; /* Size of the icons */
+    height: 100%; /* This will scale the height to fill the carousel */
+    object-fit: contain; /* Ensures images are not cropped and fully visible */
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* Faster animation on mobile devices */
+@media (max-width: 768px) {
+    .scroll-container {
+        animation-duration: 4s; /* Faster */
+    }
+}
